@@ -24,7 +24,7 @@
     Array.prototype.forEach.call(navigator.getGamepads(), function (activePad, padIndex) {
       if (activePad && activePad.connected) {
 
-        var isGearVRDevice = activePad.id.includes("Gear VR");
+        var isGearVRDevice = true;
 
         // Update pressedButtons which is combined state for all gamepads
         activePad.buttons.forEach(function (gamepadButton, buttonIndex) {
